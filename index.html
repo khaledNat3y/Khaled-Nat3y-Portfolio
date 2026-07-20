@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Khaled Nat3y Abdullah — Junior Flutter Developer from Cairo, Egypt. Building beautiful, performant mobile apps with clean architecture." />
+  <meta name="author" content="Khaled Nat3y Abdullah" />
+  <meta property="og:title" content="Khaled Nat3y — Flutter Developer" />
+  <meta property="og:description"
+    content="Junior Flutter Developer building mobile apps with BLoC, Firebase, and Clean Architecture." />
+  <meta property="og:type" content="website" />
+  <title>Khaled Nat3y — Flutter Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav__logo"><span>~/</span>khaled.dev</a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#about">about</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+
+    <button class="nav__resume" data-resume aria-label="Download resume">
+      ⬇ Resume
+    </button>
+
+    <button class="nav__hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav drawer -->
+  <nav class="nav__mobile" aria-label="Mobile navigation">
+    <a href="#about">about</a>
+    <a href="#experience">experience</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#education">education</a>
+    <a href="#contact">contact</a>
+  </nav>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+  <section id="hero" class="hero" aria-label="Introduction">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Left: Text content -->
+        <div class="hero__content">
+          <p class="hero__available">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Available for hire · Cairo, Egypt
+          </p>
+
+          <h1 class="hero__heading">
+            Hi, I'm <span class="accent">Khaled</span><br />
+            Nat3y Abdullah.
+          </h1>
+
+          <p class="hero__subtitle">
+            <span class="hero__typing" aria-live="polite">Junior Flutter Developer</span>
+          </p>
+
+          <p class="hero__bio">
+            I'm a dedicated Flutter developer with one year of hands-on experience
+            crafting beautiful, performant mobile applications. Passionate about clean
+            architecture, intuitive UI/UX, and turning ideas into products that live
+            in people's pockets.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View My Work ↓</a>
+            <a href="#contact" class="btn btn--outline">Get In Touch →</a>
+            <button class="btn btn--ghost" data-resume aria-label="Download CV">⬇ Download CV</button>
+          </div>
+
+          <div class="hero__stats" role="list" aria-label="Quick stats">
+            <div role="listitem">
+              <p class="hero__stat-num">1+</p>
+              <p class="hero__stat-label">year experience</p>
+            </div>
+            <div role="listitem">
+              <p class="hero__stat-num">5+</p>
+              <p class="hero__stat-label">projects built</p>
+            </div>
+            <div role="listitem">
+              <p class="hero__stat-num">22</p>
+              <p class="hero__stat-label">years old</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Photo -->
+        <figure class="hero__photo-wrap" aria-label="Profile photo">
+          <div class="hero__photo-accent" aria-hidden="true"></div>
+          <img class="hero__photo" src="assets/khaled.jpg" alt="Khaled Nat3y Abdullah — Junior Flutter Developer"
+            loading="eager" />
+          <figcaption class="hero__photo-badge">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Flutter Developer
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       ABOUT
+  ====================================================== -->
+  <section id="about" class="about" aria-labelledby="about-heading">
+    <div class="container">
+      <p class="section-label">// 01 — about_me</p>
+      <h2 id="about-heading" class="section-title">Who I <span>Am</span></h2>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I'm a 22-year-old mobile developer from Cairo, Egypt, currently studying
+            Computer Science at Tiba Higher Institute. Over the past year, I've immersed
+            myself in Flutter — building real-world apps that tackle everything from
+            AI-powered facial emotion detection to fully-featured e-commerce platforms.
+          </p>
+          <p>
+            I love solving complex UI/UX challenges with clean, maintainable code. I'm
+            a strong believer in architecture — you'll find BLoC state management, clean
+            layering, and GoRouter navigation patterns running through everything I build.
+          </p>
+          <p>
+            Currently, I'm actively looking for junior Flutter roles and freelance
+            opportunities where I can keep growing, ship great products, and collaborate
+            with talented teams.
+          </p>
+        </div>
+
+        <aside class="about__card reveal reveal-delay-2" aria-label="Personal details">
+          <dl>
+            <div class="about__card-item">
+              <div class="about__card-icon" aria-hidden="true">📍</div>
+              <div>
+                <dt class="about__card-key">LOCATION</dt>
+                <dd class="about__card-val">Cairo, Egypt</dd>
+              </div>
+            </div>
+            <div class="about__card-item">
+              <div class="about__card-icon" aria-hidden="true">🎓</div>
+              <div>
+                <dt class="about__card-key">UNIVERSITY</dt>
+                <dd class="about__card-val">Tiba Higher Institute</dd>
+              </div>
+            </div>
+            <div class="about__card-item">
+              <div class="about__card-icon" aria-hidden="true">📱</div>
+              <div>
+                <dt class="about__card-key">PRIMARY STACK</dt>
+                <dd class="about__card-val">Flutter / Dart</dd>
+              </div>
+            </div>
+            <div class="about__card-item">
+              <div class="about__card-icon" aria-hidden="true">🛠️</div>
+              <div>
+                <dt class="about__card-key">IDE</dt>
+                <dd class="about__card-val">Android Studio</dd>
+              </div>
+            </div>
+            <div class="about__card-item">
+              <div class="about__card-icon" aria-hidden="true">📞</div>
+              <div>
+                <dt class="about__card-key">PHONE</dt>
+                <dd class="about__card-val">+201115590783</dd>
+              </div>
+            </div>
+            <div class="about__card-item">
+              <div class="about__card-icon" aria-hidden="true">🟢</div>
+              <div>
+                <dt class="about__card-key">STATUS</dt>
+                <dd class="about__card-val">Open to opportunities</dd>
+              </div>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       EXPERIENCE
+  ====================================================== -->
+  <section id="experience" class="experience" aria-labelledby="experience-heading">
+    <div class="container">
+      <p class="section-label">// 02 — experience</p>
+      <h2 id="experience-heading" class="section-title">Work <span>Experience</span></h2>
+
+      <div class="experience__timeline">
+        <article class="experience__item reveal">
+          <div class="experience__dot" aria-hidden="true"></div>
+          <div class="experience__card">
+            <header class="experience__header">
+              <h3 class="experience__company">Route IT Training Center</h3>
+              <time class="experience__period" datetime="2023-09/2024-04">Sep 2023 – Apr 2024</time>
+            </header>
+            <p class="experience__role">Trainee Flutter Developer · Cairo, Egypt</p>
+            <ul class="experience__bullets">
+              <li>Implemented complex UI designs with Flutter's widget-based architecture, ensuring responsive layouts
+                and pixel-perfect designs.</li>
+              <li>Utilized state management solutions such as Bloc and Provider for scalable app architecture.</li>
+              <li>Integrated RESTful APIs and third-party libraries to enable seamless data exchange and enhanced
+                functionality in mobile apps.</li>
+              <li>Designed and implemented the Repository Pattern to handle local and remote data sources efficiently,
+                improving maintainability and scalability.</li>
+            </ul>
+            <p class="experience__cert">🏆 Certified Flutter Development Diploma — Route IT Training Center</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       SKILLS
+  ====================================================== -->
+  <section id="skills" class="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <p class="section-label">// 03 — tech_stack</p>
+      <h2 id="skills-heading" class="section-title">Skills & <span>Technologies</span></h2>
+
+      <div class="skills__grid">
+
+        <article class="skill-card reveal">
+          <div class="skill-card__icon" aria-hidden="true">📱</div>
+          <h3 class="skill-card__title">Mobile Development</h3>
+          <ul class="skill-card__tags" aria-label="Mobile development skills">
+            <li><span class="tag">Flutter</span></li>
+            <li><span class="tag">Dart</span></li>
+            <li><span class="tag">Android</span></li>
+            <li><span class="tag">iOS</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal reveal-delay-1">
+          <div class="skill-card__icon" aria-hidden="true">🧠</div>
+          <h3 class="skill-card__title">State Management</h3>
+          <ul class="skill-card__tags" aria-label="State management skills">
+            <li><span class="tag">BLoC / Cubit</span></li>
+            <li><span class="tag">Provider</span></li>
+            <li><span class="tag">MVVM</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal reveal-delay-2">
+          <div class="skill-card__icon" aria-hidden="true">🔥</div>
+          <h3 class="skill-card__title">Backend & Database</h3>
+          <ul class="skill-card__tags" aria-label="Backend skills">
+            <li><span class="tag">Firebase</span></li>
+            <li><span class="tag">Firestore</span></li>
+            <li><span class="tag">Supabase</span></li>
+            <li><span class="tag">Dio</span></li>
+            <li><span class="tag">REST API</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal reveal-delay-3">
+          <div class="skill-card__icon" aria-hidden="true">🏗️</div>
+          <h3 class="skill-card__title">Architecture</h3>
+          <ul class="skill-card__tags" aria-label="Architecture skills">
+            <li><span class="tag">Clean Arch</span></li>
+            <li><span class="tag">GoRouter</span></li>
+            <li><span class="tag">GetIt</span></li>
+            <li><span class="tag">Injectable</span></li>
+            <li><span class="tag">SOLID</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-card__icon" aria-hidden="true">💾</div>
+          <h3 class="skill-card__title">Local Storage</h3>
+          <ul class="skill-card__tags" aria-label="Storage skills">
+            <li><span class="tag">SharedPreferences</span></li>
+            <li><span class="tag">SecureStorage</span></li>
+            <li><span class="tag">Hive</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal reveal-delay-1">
+          <div class="skill-card__icon" aria-hidden="true">🌐</div>
+          <h3 class="skill-card__title">Languages</h3>
+          <ul class="skill-card__tags" aria-label="Programming languages">
+            <li><span class="tag">Dart</span></li>
+            <li><span class="tag">C++</span></li>
+            <li><span class="tag">Python</span></li>
+            <li><span class="tag">HTML/CSS</span></li>
+            <li><span class="tag">SQL</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal reveal-delay-2">
+          <div class="skill-card__icon" aria-hidden="true">⚙️</div>
+          <h3 class="skill-card__title">DevOps & Tools</h3>
+          <ul class="skill-card__tags" aria-label="DevOps skills">
+            <li><span class="tag">GitHub Actions</span></li>
+            <li><span class="tag">Firebase Dist.</span></li>
+            <li><span class="tag">Git</span></li>
+            <li><span class="tag">Figma</span></li>
+            <li><span class="tag">Adobe XD</span></li>
+          </ul>
+        </article>
+
+        <article class="skill-card reveal reveal-delay-3">
+          <div class="skill-card__icon" aria-hidden="true">🤖</div>
+          <h3 class="skill-card__title">AI & Machine Learning</h3>
+          <ul class="skill-card__tags" aria-label="AI and ML skills">
+            <li><span class="tag">TensorFlow Lite</span></li>
+            <li><span class="tag">Google ML Kit</span></li>
+            <li><span class="tag">Gemini API</span></li>
+            <li><span class="tag">FFmpeg</span></li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       PROJECTS
+  ====================================================== -->
+  <section id="projects" class="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <p class="section-label">// 04 — projects</p>
+      <h2 id="projects-heading" class="section-title">What I've <span>Built</span></h2>
+
+      <div class="projects__grid">
+
+        <!-- Project 1 -->
+        <article class="project-card project-card--featured reveal">
+          <div>
+            <p class="badge">⭐ GRADUATION PROJECT</p>
+            <h3 class="project-card__title">EmoVision — AI Facial Emotion Detection</h3>
+            <p class="project-card__desc">
+              An AI-powered Flutter app that detects and analyzes facial emotions in videos using
+              TensorFlow Lite and Google ML Kit. Features multi-factor Firebase authentication
+              (email/password, Google Sign-In, OTP), biometric login via Local Auth, video
+              upload &amp; preview with FFmpeg, and real-time emotion analysis with Lottie animations.
+            </p>
+            <div class="project-card__footer">
+              <ul class="project-card__tech" aria-label="Technologies used">
+                <li><span>Flutter</span></li>
+                <li><span>Firebase</span></li>
+                <li><span>BLoC</span></li>
+                <li><span>TFLite</span></li>
+                <li><span>ML Kit</span></li>
+                <li><span>Clean Arch</span></li>
+              </ul>
+              <a href="https://github.com/khaledNat3y/emo-vision" target="_blank" rel="noopener noreferrer"
+                class="project-card__github" aria-label="View EmoVision on GitHub">
+                🐙 GitHub →
+              </a>
+            </div>
+          </div>
+          <p class="project-card__number" aria-hidden="true">01</p>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div>
+            <p class="badge">MOBILE APP</p>
+            <h3 class="project-card__title">E-Commerce — Styliq App</h3>
+            <p class="project-card__desc">
+              A fashion e-commerce app with user authentication, cart management, RESTful API
+              integration, and smooth animations. Uses Bloc (Cubit) for scalable state management
+              and Flutter Secure Storage for secure token handling.
+            </p>
+            <div class="project-card__footer">
+              <ul class="project-card__tech" aria-label="Technologies used">
+                <li><span>Flutter</span></li>
+                <li><span>BLoC</span></li>
+                <li><span>REST API</span></li>
+                <li><span>Animations</span></li>
+                <li><span>SecureStorage</span></li>
+              </ul>
+              <a href="https://github.com/khaledNat3y/new-e-commerce-app" target="_blank" rel="noopener noreferrer"
+                class="project-card__github" aria-label="View Styliq App on GitHub">
+                🐙 GitHub →
+              </a>
+            </div>
+          </div>
+          <p class="project-card__number" aria-hidden="true">02</p>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div>
+            <p class="badge">MOBILE APP</p>
+            <h3 class="project-card__title">E-Commerce — Fruits App</h3>
+            <p class="project-card__desc">
+              A dynamic e-commerce platform with a secure Payment Gateway integration, Firebase
+              &amp; Supabase backend, and Clean Architecture for scalability. Employs Bloc (Cubit)
+              for state management and delivers a seamless shopping experience.
+            </p>
+            <div class="project-card__footer">
+              <ul class="project-card__tech" aria-label="Technologies used">
+                <li><span>Flutter</span></li>
+                <li><span>BLoC</span></li>
+                <li><span>Firebase</span></li>
+                <li><span>Supabase</span></li>
+                <li><span>Payment Gateway</span></li>
+              </ul>
+              <a href="https://github.com/khaledNat3y/fruit_app" target="_blank" rel="noopener noreferrer"
+                class="project-card__github" aria-label="View Fruits App on GitHub">
+                🐙 GitHub →
+              </a>
+            </div>
+          </div>
+          <p class="project-card__number" aria-hidden="true">03</p>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal">
+          <div>
+            <p class="badge">MOBILE APP</p>
+            <h3 class="project-card__title">AI Chat App</h3>
+            <p class="project-card__desc">
+              An AI-powered chat application using Flutter, Bloc (Cubit), and Clean Architecture.
+              Integrates Firebase for authentication and real-time messaging, and the Gemini API
+              to deliver intelligent AI-generated responses for a seamless chat experience.
+            </p>
+            <div class="project-card__footer">
+              <ul class="project-card__tech" aria-label="Technologies used">
+                <li><span>Flutter</span></li>
+                <li><span>Firebase</span></li>
+                <li><span>BLoC</span></li>
+                <li><span>Gemini API</span></li>
+                <li><span>Clean Arch</span></li>
+              </ul>
+              <a href="https://github.com/khaledNat3y/chat_app" target="_blank" rel="noopener noreferrer"
+                class="project-card__github" aria-label="View AI Chat App on GitHub">
+                🐙 GitHub →
+              </a>
+            </div>
+          </div>
+          <p class="project-card__number" aria-hidden="true">04</p>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal">
+          <div>
+            <p class="badge">MOBILE APP</p>
+            <h3 class="project-card__title">News App</h3>
+            <p class="project-card__desc">
+              A dynamic news aggregator built with Flutter and Cubit within a clean, feature-based
+              architecture. Fetches real-time news from a RESTful API and integrates URL Launcher
+              to navigate users to full articles on external websites.
+            </p>
+            <div class="project-card__footer">
+              <ul class="project-card__tech" aria-label="Technologies used">
+                <li><span>Flutter</span></li>
+                <li><span>BLoC</span></li>
+                <li><span>REST API</span></li>
+                <li><span>Clean Arch</span></li>
+                <li><span>URL Launcher</span></li>
+              </ul>
+              <a href="https://github.com/khaledNat3y/news_app_news_impl" target="_blank" rel="noopener noreferrer"
+                class="project-card__github" aria-label="View News App on GitHub">
+                🐙 GitHub →
+              </a>
+            </div>
+          </div>
+          <p class="project-card__number" aria-hidden="true">05</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       EDUCATION
+  ====================================================== -->
+  <section id="education" class="education" aria-labelledby="education-heading">
+    <div class="container">
+      <p class="section-label">// 05 — education</p>
+      <h2 id="education-heading" class="section-title">Academic <span>Background</span></h2>
+
+      <article class="education__card reveal">
+        <div class="education__icon" aria-hidden="true">🎓</div>
+        <div>
+          <h3 class="education__degree">Bachelor's in Computer Science</h3>
+          <p class="education__school">Tiba Higher Institute · Cairo, Egypt</p>
+          <p class="education__detail">
+            Studying mobile application development with a focus on Flutter and modern software
+            engineering principles. Relevant coursework: Data Structures, Algorithms, AI,
+            Software Engineering, Database Management. Graduation project: EmoVision —
+            AI-powered facial emotion detection app.
+          </p>
+        </div>
+        <time class="education__year" datetime="2022-10/2026-06">Oct 2022 – Jun 2026</time>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CONTACT
+  ====================================================== -->
+  <section id="contact" class="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <p class="section-label">// 06 — contact</p>
+      <h2 id="contact-heading" class="section-title">Let's <span>Connect</span></h2>
+
+      <div class="contact__grid">
+        <div class="contact__text reveal">
+          <p>
+            I'm actively looking for junior Flutter developer roles and freelance opportunities.
+            Whether you have a project in mind, want to collaborate, or just want to say hi —
+            my inbox is always open.
+          </p>
+          <p class="contact__availability" aria-label="Availability status">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Available for full-time roles &amp; freelance projects
+          </p>
+        </div>
+
+        <address class="contact__links reveal reveal-delay-2">
+          <a href="mailto:khalednatey85@gmail.com" class="contact__link" aria-label="Send email to Khaled">
+            <span class="contact__link-icon" aria-hidden="true">✉️</span>
+            <span>
+              <span class="contact__link-label">EMAIL</span>
+              <span class="contact__link-val">khalednatey85@gmail.com</span>
+            </span>
+          </a>
+          <a href="https://github.com/khaledNat3y" target="_blank" rel="noopener noreferrer" class="contact__link"
+            aria-label="Visit Khaled's GitHub profile">
+            <span class="contact__link-icon" aria-hidden="true">🐙</span>
+            <span>
+              <span class="contact__link-label">GITHUB</span>
+              <span class="contact__link-val">github.com/khaledNat3y</span>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/khaled-nat3y-a057462a1/" target="_blank" rel="noopener noreferrer"
+            class="contact__link" aria-label="Visit Khaled's LinkedIn profile">
+            <span class="contact__link-icon" aria-hidden="true">💼</span>
+            <span>
+              <span class="contact__link-label">LINKEDIN</span>
+              <span class="contact__link-val">linkedin.com/in/khaled-nat3y</span>
+            </span>
+          </a>
+          <a href="https://codeforces.com/profile/khalednatey85" target="_blank" rel="noopener noreferrer"
+            class="contact__link" aria-label="Visit Khaled's Codeforces profile">
+            <span class="contact__link-icon" aria-hidden="true">💻</span>
+            <span>
+              <span class="contact__link-label">CODEFORCES</span>
+              <span class="contact__link-val">codeforces.com/khalednatey85</span>
+            </span>
+          </a>
+        </address>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <p>Built with ❤️ · Khaled Nat3y Abdullah · 2025 · Junior Flutter Developer</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
